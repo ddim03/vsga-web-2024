@@ -9,6 +9,8 @@ vsga-web-2024/
 ├── pertemuan-1/
 │   ├── doc/
 │   ├── project-name/
+│   │   ├── readme.md
+│   │   └── ...
 │   ├── handsout/
 │   └── ...
 ├── pertemuan-2
@@ -33,5 +35,8 @@ vsga-web-2024/
 - [Pertemuan 11 - Agregate Function](https://)
 - [Pertemuan 12 -  View and Procedure](https://)
 - [Pertemuan 13 - PHP: Form & Validation (GET/POST)](https://)
-- [Pertemuan 14 - Form CRUD 1](https://)
+- [Pertemuan 14 - Form CRUD 1](./pertemuan-14/)
 - [Pertemuan 15 - Form CRUD 2](https://)
+
+#### Notes 📝
+Baca file readme jika tersedia didalam folder
