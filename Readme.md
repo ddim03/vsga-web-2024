@@ -36,7 +36,8 @@ vsga-web-2024/
 - [Pertemuan 12 -  View and Procedure](https://)
 - [Pertemuan 13 - PHP: Form & Validation (GET/POST)](https://)
 - [Pertemuan 14 - Form CRUD 1](./pertemuan-14/)
-- [Pertemuan 15 - Form CRUD 2](https://)
+- [Pertemuan 15 - Form CRUD 2](./pertemuan-15/)
 
 #### Notes 📝
-Baca file readme jika tersedia didalam folder
+1. Baca file readme jika tersedia didalam folder
+2. Repo akan terus diupdate selama kegiatan pelatihan DTS VSGA X TSA POLINEMA 2024 berlangsung
