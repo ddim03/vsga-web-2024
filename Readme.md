@@ -37,6 +37,9 @@ vsga-web-2024/
 - [Pertemuan 13 - PHP: Form & Validation (GET/POST)](https://)
 - [Pertemuan 14 - Form CRUD 1](./pertemuan-14/)
 - [Pertemuan 15 - Form CRUD 2](./pertemuan-15/)
+- [Pertemuan 16 - Session Cookies](./pertemuan-16/)
+- [Pertemuan 17 - Git Version Control, Integrasi VSCode dg Github, Composer](https://)
+- [Pertemuan 17 - Pengenalan Laravel](https://)
 
 #### Notes 📝
 1. Baca file readme jika tersedia didalam folder
