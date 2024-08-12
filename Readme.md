@@ -40,8 +40,8 @@ vsga-web-2024/
 - [Pertemuan 16 - Session Cookies](./pertemuan-16/)
 - [Pertemuan 17 - Git Version Control, Integrasi VSCode dg Github, Composer](./pertemuan-17/)
 - [Pertemuan 18 - Pengenalan Laravel](./pertemuan-18/)
-- [Pertemuan 19 - Laravel: Routing, Controller, View](./)
-- [Pertemuan 20 - Laravel: Migration dan seeder](./)
+- [Pertemuan 19 - Laravel: Routing, Controller, View](./pertemuan-18/VSGA_2024/)
+- [Pertemuan 20 - Laravel: Migration dan seeder](./pertemuan-18/VSGA_2024/)
 - [Pertemuan 21 - Laravel: DB Facade dan Query Builder](./)
 - [Pertemuan 22 - Laravel: Eloquent](./)
 
