@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CRUDController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\LevelController;
 use App\Http\Controllers\PengajarController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,3 +64,6 @@ Route::resource('crud', CRUDController::class);
 Route::get('selamat', function () {
     return view('hello', ['name' => 'Dimas Gilang Dwi Aji']);
 });
+
+Route::get('level', [LevelController::class, 'index']);
+Route::get('kategori', [KategoriController::class, 'index']);

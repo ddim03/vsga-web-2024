@@ -42,7 +42,7 @@ vsga-web-2024/
 - [Pertemuan 18 - Pengenalan Laravel](./pertemuan-18/)
 - [Pertemuan 19 - Laravel: Routing, Controller, View](./pertemuan-18/VSGA_2024/)
 - [Pertemuan 20 - Laravel: Migration dan seeder](./pertemuan-18/VSGA_2024/)
-- [Pertemuan 21 - Laravel: DB Facade dan Query Builder](./)
+- [Pertemuan 21 - Laravel: DB Facade dan Query Builder](./pertemuan-18/VSGA_2024/)
 - [Pertemuan 22 - Laravel: Eloquent](./)
 
 #### Notes 📝
