@@ -44,6 +44,8 @@ vsga-web-2024/
 - [Pertemuan 20 - Laravel: Migration dan seeder](./pertemuan-18/VSGA_2024/)
 - [Pertemuan 21 - Laravel: DB Facade dan Query Builder](./pertemuan-18/VSGA_2024/)
 - [Pertemuan 22 - Laravel: Eloquent](./)
+- [Pertemuan 23 - Laravel: Eloquent](./laravel-pos/)
+- [Pertemuan 24 - Laravel: Eloquent](./laravel-pos/)
 
 #### Notes 📝
 1. Baca file readme jika tersedia didalam folder
