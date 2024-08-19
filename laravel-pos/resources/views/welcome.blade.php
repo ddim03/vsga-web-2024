@@ -2,13 +2,10 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Title</h3>
+        <h3 class="card-title">Halo, Dimas Gilang Dwi Aji</h3>
     </div>
     <div class="card-body">
-        Start creating your amazing application!
-    </div>
-    <div class="card-footer">
-        Footer
+        Ini adalah halaman utama
     </div>
 </div>
 @endsection
