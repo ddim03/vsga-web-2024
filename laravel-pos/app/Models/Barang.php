@@ -16,4 +16,14 @@ class Barang extends Model
     {
         return $this->belongsTo(KategoriBarang::class, 'kategori_id');
     }
+
+    public function stok()
+    {
+        return $this->hasOne(StokBarang::class, 'barang_id');
+    }
+
+    public function penjualan_detail()
+    {
+        return $this->hasMany(PenjualanDetail::class, 'barang_id');
+    }
 }
