@@ -46,8 +46,15 @@ vsga-web-2024/
 - [Pertemuan 22 - Laravel: Eloquent](./)
 - [Pertemuan 23 - Laravel: Blade View, Layout, dan Templating](./laravel-pos/)
 - [Pertemuan 24 - Laravel: Datatables](./laravel-pos/)
+- [Pertemuan 25 - Laravel: Form CRUD dan Validasi](./laravel-pos/)
+- [Pertemuan 26 - Laravel: Form CRUD dan Validasi 2](./laravel-pos/)
+- [Pertemuan 27 - Laravel: Authentication dan Authorization]()
+- [Pertemuan 28 - Laravel: File Upload dan Export]()
+- [Pertemuan 29 - Laravel: Starter Code]()
+- [Pertemuan 30 - Laravel: Starter Code - 2]()
 
 #### Notes 📝
 1. Baca file readme jika tersedia didalam folder
 2. Repo akan terus diupdate selama kegiatan pelatihan DTS VSGA X TSA POLINEMA 2024 berlangsung
 3. Tidak semua pertemuan mengerjakan projek, bisa jadi hanya soal dan jawaban
+4. Satu projek bisa digunakan untuk beberapa pertemuan
