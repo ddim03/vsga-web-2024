@@ -4,7 +4,7 @@
   <div class="card-header">
     <h3 class="card-title">{{ $page->title }}</h3>
     <div class="card-tools">
-      <a class="btn btn-sm btn-primary mt-1" href="{{ url('user/create') }}">Tambah</a>
+      <a class="btn btn-sm btn-primary mt-1" href="{{ url('level/create') }}">Tambah</a>
     </div>
   </div>
   <div class="card-body">
@@ -46,26 +46,30 @@
         className: "text-center",
         orderable: false,
         searchable: false,
+        width: "10%",
       },
       {
         data: "level_kode",
         className: "",
+        // searchable: true, jika ingin kolom ini bisa dicari
         // orderable: true, jika ingin kolom ini bisa diurutkan
         orderable: true,
-        // searchable: true, jika ingin kolom ini bisa dicari
         searchable: true,
+        width: "20%",
       },
       {
         data: "level_nama",
         className: "",
         orderable: true,
         searchable: true,
+        width: "50%",
       },
       {
         data: "aksi",
         className: "",
         orderable: false,
         searchable: false,
+        width: "20%",
       },
     ],
   });

@@ -40,4 +40,95 @@ class LevelUserController extends Controller
             ->rawColumns(['aksi'])
             ->make(true);
     }
+
+    public function create()
+    {
+        $breadcrump = (object) [
+            'title' => "Tambah Level",
+            'list' => ["Home", "Level", "Tambah"]
+        ];
+
+        $activeMenu = "level";
+
+        $page = (object) [
+            'title' => "Tambah Level Baru",
+        ];
+
+        return view('level.create', [
+            'breadcrump' => $breadcrump,
+            'activeMenu' => $activeMenu,
+            'page' => $page,
+        ]);
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'level_kode' => 'required|unique:m_level|max:10|alpha',
+            'level_nama' => 'required|max:100',
+        ]);
+
+        LevelModel::create($request->all());
+
+        return redirect('/level')->with('success', 'Level baru ditambahkan');
+    }
+
+    public function edit($id)
+    {
+        $breadcrump = (object) [
+            'title' => "Edit Level",
+            'list' => ["Home", "Level", "Edit"]
+        ];
+
+        $activeMenu = "level";
+        $level = LevelModel::find($id);
+
+        $page = (object) [
+            'title' => "Edit Level",
+        ];
+
+        return view('level.edit', [
+            'breadcrump' => $breadcrump,
+            'activeMenu' => $activeMenu,
+            'page' => $page,
+            'level' => $level
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'level_kode' => 'required|unique:m_level,level_kode,' . $id . ',level_id|max:10|alpha',
+            'level_nama' => 'required|max:100',
+        ]);
+        LevelModel::find($id)->update($request->all());
+
+        return redirect('/level')->with('success', 'Level berhasil diupdate');
+    }
+
+    public function destroy($id)
+    {
+        $level = LevelModel::where('level_id', $id)->firstOrFail();
+        $level->delete();
+        return redirect('/level')->with('success', 'Level berhasil dihapus');
+    }
+
+    public function show($id)
+    {
+        $breadcrump = (object) [
+            'title' => "Detail Level",
+            'list' => ["Home", "Level", "Detail"]
+        ];
+        $activeMenu = "level";
+        $level = LevelModel::find($id);
+        $page = (object) [
+            'title' => "Detail Level",
+        ];
+        return view('level.show', [
+            'breadcrump' => $breadcrump,
+            'activeMenu' => $activeMenu,
+            'page' => $page,
+            'level' => $level
+        ]);
+    }
 }

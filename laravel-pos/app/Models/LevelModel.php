@@ -10,7 +10,8 @@ class LevelModel extends Model
     use HasFactory;
 
     protected $table = 'm_level';
-    protected $key = 'id_level';
+    protected $primaryKey = 'level_id';
+    protected $guarded = [''];
 
     public function user()
     {
