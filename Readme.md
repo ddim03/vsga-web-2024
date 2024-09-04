@@ -14,6 +14,9 @@ vsga-web-2024/
 │   ├── handsout/
 │   └── ...
 ├── pertemuan-2
+│   └── ...
+├── project-name
+│   └── ...
 └── ...
 ```
 - pertemuan-* : pertemuan keberapa
@@ -48,8 +51,8 @@ vsga-web-2024/
 - [Pertemuan 24 - Laravel: Datatables](./laravel-pos/)
 - [Pertemuan 25 - Laravel: Form CRUD dan Validasi](./laravel-pos/)
 - [Pertemuan 26 - Laravel: Form CRUD dan Validasi 2](./laravel-pos/)
-- [Pertemuan 27 - Laravel: Authentication dan Authorization]()
-- [Pertemuan 28 - Laravel: File Upload dan Export]()
+- [Pertemuan 27 - Laravel: Authentication dan Authorization](./laravel-pos/)
+- [Pertemuan 28 - Laravel: File Upload dan Export](./laravel-pos/)
 - [Pertemuan 29 - Laravel: Starter Code]()
 - [Pertemuan 30 - Laravel: Starter Code - 2]()
 
