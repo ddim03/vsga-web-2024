@@ -40,4 +40,89 @@ class KategoriBarangController extends Controller
             ->rawColumns(['aksi'])
             ->make(true);
     }
+
+    public function create()
+    {
+        $breadcrump = (object) [
+            'title' => "Tambah Kategori Barang",
+            'list' => ["Home", "Kategori"]
+        ];
+        $page = (object) [
+            'title' => "Tambah",
+        ];
+        $activeMenu = "kategori";
+        return view('kategori.create', [
+            'breadcrump' => $breadcrump,
+            'activeMenu' => $activeMenu,
+            'page' => $page
+        ]);
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'kategori_kode' => 'required|unique:m_kategori|max:10',
+            'kategori_nama' => 'required|max:100',
+        ]);
+        $data = $request->all();
+        KategoriBarang::create($data);
+        return redirect('/kategori')->with('success', 'Data Kategori Berhasil Ditambahkan');
+    }
+
+    public function edit($id)
+    {
+        $breadcrump = (object) [
+            'title' => "Edit Kategori",
+            'list' => ["Home", "Kategori"]
+        ];
+        $page = (object) [
+            'title' => "Edit Kategori",
+        ];
+        $activeMenu = "kategori";
+        $kategori = KategoriBarang::find($id);
+        return view('kategori.edit', [
+            'breadcrump' => $breadcrump,
+            'activeMenu' => $activeMenu,
+            'page' => $page,
+            'kategori' => $kategori
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'kategori_kode' => 'required|unique:m_kategori,kategori_kode,' . $id . ',kategori_id|max:10',
+            'kategori_nama' => 'required|max:100',
+        ]);
+
+        $data = $request->all();
+        KategoriBarang::find($id)->update($data);
+        return redirect('/kategori')->with('success', 'Data Kategori Berhasil Diubah');
+    }
+
+    public function destroy($id)
+    {
+        $kategori = KategoriBarang::where('kategori_id', $id)->firstOrFail();
+        $kategori->delete();
+        return redirect('/kategori')->with('success', 'Data Kategori Berhasil Dihapus');
+    }
+
+    public function show($id)
+    {
+        $breadcrump = (object) [
+            'title' => "Detail Kategori",
+            'list' => ["Home", "Kategori"]
+        ];
+        $page = (object) [
+            'title' => "Detail Kategori",
+        ];
+        $activeMenu = "kategori";
+        $kategori = KategoriBarang::find($id);
+        return view('kategori.show', [
+            'breadcrump' => $breadcrump,
+            'activeMenu' => $activeMenu,
+            'page' => $page,
+            'kategori' => $kategori
+        ]);
+    }
 }
